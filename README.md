@@ -2,12 +2,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-This library contains repositories containing software applications, data sets, and hardware reference designs to support research and education in the fields of service-robotics. Our team invites you to join us in research and engineering efforts that consider how robots can assist and augment the capabilities of human beings.
+This library consists of repositories containing software applications, data sets, and hardware reference designs to support research and education in the fields of service-robotics. Our team invites you to join us in research and engineering efforts that consider how robots can assist and augment the capabilities of human beings.
 
-Current projects focus on the field of **Human-Robot-Interaction** with the goal of providing service robots the means to effectively communicate with humans. In the future we plan to offer new repositories exploring the fields of robot **Navigation** and object **Manipulation**.
+Current projects focus on the field of **Human-Robot-Interaction** with the goal of providing service robots the means to effectively communicate with humans. In the future we plan to add new repositories exploring the fields of robot **Navigation** and object **Manipulation**.
 
 ## Human-Robot Interaction (HRI)
-The field of HRI concerns solutions for robot speech, expressions, gestures, and information access to provide natural methods for robot command and control.
+The field of HRI includes solutions for robot speech, expressions, gestures, and information access to provide human-centric and natural methods for robot interaction, command, and control.
 
 ### Labanotation Suite
 The Labanotation Suite is a collection of repositories comprising a system that can be used to give service robots the ability to move in natural and meaningful ways. It includes software tools, source code, sample data, hardware design kits and simulation software that supports experimentation with the concepts presented in the paper **[Describing Upper-Body Motions Based on Labanotation for Learning-from-Observation Robots](https://link.springer.com/article/10.1007%2Fs11263-018-1123-1) (International Journal of Computer Vision, December 2018)**.
