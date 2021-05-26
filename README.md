@@ -15,7 +15,7 @@ The Labanotation Suite is a collection of applications comprising a system that 
 
 #### **[KinectReader: ](https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/KinectReader) Human Gesture Capture Tool**
 
-A compiled Windows application that connects to a Kinect sensor device and provides a user interface for capturing and storing gestures performed by human subjects. It's primary output data is human stick-figure joint positions in a .csv format, but can also capture corresponding RGB video and audio at the same time.
+A compiled Windows application that connects to a Kinect sensor device and provides a user interface for capturing and storing gestures performed by human subjects. It's primary output data is human stick-figure joint positions in a CSV format, but can also capture corresponding RGB video and audio at the same time.
 
 #### **[KinectCaptureEditor: ](https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/KinectCaptureEditor) Human Gesture Trimming Tool**
 A compiled Windows application that loads human joint position .csv files produced by the KinectReader or other tools, as well as optional corresponding video and audio files. It provides a timeline-based method to trim audio and video joint movement sequences into representative human gestures.
@@ -32,7 +32,7 @@ With a Windows 10 PC, and optionally a 3D-printer and about $350(USD) in electro
 
 #### **[Gesture Library: ](https://github.com/microsoft/gestureBotDesignKit/tree/main/src/Labanotation) Example Set of Upper-Torso Gestures**
 
-The Gesture Library is a data-set of upper-torso gesture-concept pairs expressed in Labanotation format and stored as .json files. The data is directly accessed by the Gesture Engine. The library includes a complete listing of the sample database including a video clip of each gesture performed by the gestureBot.
+The Gesture Library is a data-set of upper-torso gesture-concept pairs expressed in Labanotation format and stored as JSON files. The data is directly accessed by the Gesture Engine. The library includes a complete listing of the sample database including a video clip of each gesture performed by the gestureBot.
 
 #### **[Gesture Service:  ](https://github.com/microsoft/gestureBotDesignKit/tree/main/src/Samples/gestureService_w2v) Example Gesture Service Engine**
 
