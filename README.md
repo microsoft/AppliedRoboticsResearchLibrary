@@ -15,13 +15,13 @@ The Labanotation Suite is a collection of applications comprising a system that 
 
 #### **[KinectReader: ](https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/KinectReader) Human Gesture Capture Tool**
 
-A compiled Windows application that connects to a Kinect sensor device and provides a user interface for capturing and storing gestures performed by human subjects. It's primary output data is human stick-figure joint positions in a CSV format, but can also capture corresponding RGB video and audio at the same time.
+KinectReader is a compiled Windows application that connects to a Kinect sensor device and provides a user interface for capturing and storing gestures performed by human subjects. It's primary output data is human stick-figure joint positions in a CSV format, but can also capture corresponding RGB video and audio at the same time.
 
 #### **[KinectCaptureEditor: ](https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/KinectCaptureEditor) Human Gesture Trimming Tool**
-A compiled Windows application that loads human joint position CSV files produced by the KinectReader or other tools, as well as optional corresponding video and audio files. It provides a timeline-based method to trim audio and video joint movement sequences into representative human gestures.
+KinectCaptureEditor is a compiled Windows application that loads human joint position CSV files produced by the KinectReader or other tools, as well as optional corresponding video and audio files. It provides a timeline-based method to trim audio and video joint movement sequences into representative human gestures.
 
 #### **[LabanEditor: ](https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/LabanEditor)  Gesture Analysis and Labanotation Generator**
-A Python application that loads a Kinect joint CSV file representing a human gesture, provides algorithmic options for automatically extracting keyframes from the gesture that correspond Labanotation data, and provides a graphical user interface for selection and modification of the extracted keyframes. Additionally, it saves the resulting gesture data in a JSON file format suitable for controlling robots running a gesture interpretation driver, as well as PNG graphic file renderings of the charts and diagrams used in the interface.
+LabanEditor is a Python application that loads a Kinect joint CSV file representing a human gesture, provides algorithmic options for automatically extracting keyframes from the gesture that correspond Labanotation data, and provides a graphical user interface for selection and modification of the extracted keyframes. Additionally, it saves the resulting gesture data in a JSON file format suitable for controlling robots running a gesture interpretation driver, as well as PNG graphic file renderings of the charts and diagrams used in the interface.
 
 #### **[MSRAbotSimulation: ](https://github.com/microsoft/LabanotationSuite/tree/master/MSRAbotSimulation)  Gesture Performance with Simulated Robot**
 This Python and browser-based simulation software uses javascript and html code to implement an animated 3D model of the robot and a user interface for selecting and rendering gestures described in the JSON format. A temporary local HTTP server invoked with python or an existing server can be used to host the software and the simulation is run within a modern web browser. The user can choose from a collection of sample gestures, or select a new gesture captured and created using this project's Gesture Authoring Tools.
@@ -32,17 +32,32 @@ With a Windows 10 PC, and optionally a 3D-printer and about $350(USD) in electro
 
 #### **[Gesture Library: ](https://github.com/microsoft/gestureBotDesignKit/tree/main/src/Labanotation) Example Set of Upper-Torso Gestures**
 
-The Gesture Library is a data-set of upper-torso gesture-concept pairs expressed in Labanotation format and stored as JSON files. The data is directly accessed by the Gesture Engine. The library includes a complete listing of the sample database including a video clip of each gesture performed by the gestureBot.
+The Gesture Library is a data-set of upper-torso gesture-concept pairs expressed in Labanotation format and stored as JSON files. The data is directly accessed by the Gesture Service and is organized around 40 clusters of gesture-concept pairs including 6 deictic concepts (me, you, this, that, here, there), 33 expressive theme concepts (hello, many, question, etc.), and 1 "beat" concept used for idling. The clusters were segregated using a method described in the paper: [***Development and Verification of a Gesture-generating Architecture for Conversational Humanoid Robots:*** ](https://hal.archives-ouvertes.fr/hal-03108169). The library includes a complete listing of the sample data including a video clip of each gesture performed by the gestureBot.
 
-#### **[Gesture Service:  ](https://github.com/microsoft/gestureBotDesignKit/tree/main/src/Samples/gestureService_w2v) Example Gesture Service Engine**
+#### **[Gesture Service: ](https://github.com/microsoft/gestureBotDesignKit/tree/main/src/Samples/gestureService_w2v) Example Gesture Service Engine**
 
 The Gesture Service project is a software module constructed with Python and Google's neural network [word2vec](https://code.google.com/archive/p/word2vec/#!) that takes a text phrase as input and returns a corresponding gesture.
 
 ## Navigation
 The field of robot navigation includes systems and methods such as simultaneous-location-and-mapping (SLAM), path planning, and map management.
 
-#### **[HololensNavigation:  ](https://github.com/microsoft/HololensNavigation)Self-calibrating Indoor Navigation**
-This project shows how a [Hololens](https://www.microsoft.com/en-us/hololens) device can be placed on the head of [Pepper robot](https://us.softbankrobotics.com/pepper) and provide a self-calibrating indoor navigation solution within a single room.
+### **[HoloLensNavigation](https://github.com/microsoft/HololensNavigation)**
+The HoloLensNavigation system shows how a [HoloLens](https://www.microsoft.com/en-us/hololens) device can be placed on the head of [Pepper robot](https://us.softbankrobotics.com/pepper) and provide a self-calibrating indoor navigation solution within a single room. It operates in one of three modes: map generation, position calibration, and navigation.
+
+#### **[HoloLensSpatialMapping: ](https://github.com/microsoft/HololensNavigation) Dynamic Spatial Mapping**
+HololensSpatialMapping is a UWP application that uses the HoloLens device sensors to capture and maintain a spatial map of the immediate environment and also communicates with HoloROS Bridge.
+
+#### **[HoloLens_Localization: ](https://github.com/microsoft/HololensNavigation/tree/main/linux/HoloLens_Localization) Local Position Calibration and Computation**
+HoloLens_Localization is a ROS (Melodic) package that computes the local position of the robot based on sensor measurements as the robot moves through calibrated poses and navigates through the environment.
+
+#### **[HoloROSBridge: ](https://github.com/microsoft/HololensNavigation/tree/main/linux/HoloROSBridge)ROS Communication with HoloLens Device**
+HoloROSBridge is a ROS (Melodic) package that communicates with the HoloLensSpatialMapping application running on the HoloLens device.
+
+#### **[holo_nav_dash: ](https://github.com/microsoft/HololensNavigation/tree/main/linux/holo_nav_dash) Operational Dashboard**
+holo_nav_dash is a ROS (Melodic) package that provides a local http server and a browser-based operational interface for starting up and monitoring calibration and navigation operations.
+
+#### **[navigation_launcher: ](https://github.com/microsoft/HololensNavigation/tree/main/linux/navigation_launcher) ROS Navigation Stack Launcher**
+navigation_launcher is a ROS (Melodic) package that contains launch scripts for starting up components for the HoloLens stack, the HoloLens Navigation stack, and the ROS Navigation stack.
 
 ## Manipulation
 In industrial applications, robotic object manipulation is common where actions are manually programmed and repeated behind safety barriers. In service-robotics scenarios, dynamic environments and safety considerations make the entire field much more challenging. Our projects explore solutions where HRI and Navigation technologies can be leveraged to allow robots to learn from humans to perform manipulation tasks safely and effectively in residential, workplace, and public environments. 
