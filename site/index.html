@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Microsoft Applied Robotics Research Library</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">Microsoft Applied Robotics Research Library</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#human-robot-interaction-hri">Human-Robot Interaction (HRI)</a></li>
+            <li><a href="#labanotation-suite">Labanotation Suite</a></li>
+            <li><a href="#gesturebot-design-kit">gestureBot Design Kit</a></li>
+        <li class="main "><a href="#navigation">Navigation</a></li>
+            <li><a href="#hololensnavigation-self-calibrating-indoor-navigation">HololensNavigation:  Self-calibrating Indoor Navigation</a></li>
+        <li class="main "><a href="#manipulation">Manipulation</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><strong><img alt="logo" src="MARR_logo.png" /> Microsoft Applied Robotics Research Library</strong></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<p>This library is a collection of GitHub repositories containing software applications, data sets, and hardware reference designs to support research and education in the fields of service-robotics. Our team invites you to join us in research and engineering efforts that advance how robots can assist and augment the capabilities of human beings.</p>
+<p>Current projects focus on the field of <strong>Human-Robot-Interaction</strong> with the goal of providing service robots the means to effectively communicate with humans. In the future we plan to offer new repositories exploring the fields of robot <strong>Navigation</strong> and object <strong>Manipulation</strong>.</p>
+<h2 id="human-robot-interaction-hri">Human-Robot Interaction (HRI)</h2>
+<p>The field of HRI includes robot speech, expressions, gestures, and information access to provide natural user interface methods for robot applications.</p>
+<h3 id="labanotation-suite"><a href="https://github.com/microsoft/LabanotationSuite">Labanotation Suite</a></h3>
+<p>The Labanotation Suite is a collection of applications comprising a system that can be used to give service robots the ability to move in natural and meaningful ways. It includes software tools, source code, sample data, and hardware simulation software that supports experimentation with the concepts presented in the paper <strong><a href="https://link.springer.com/article/10.1007%2Fs11263-018-1123-1">Describing Upper-Body Motions Based on Labanotation for Learning-from-Observation Robots</a> (International Journal of Computer Vision, December 2018)</strong>. The system consists of compiled gesture capture applications using the Microsoft Kinect sensor device and a Windows 10 PC. Editing tools constructed in Python provide gesture trimming and movement analysis options to identify key points of movment. Output is graphical Labanotation scores as well as movement data expressed in Labanotation and stored in JSON data format. </p>
+<h4 id="kinectreader-human-gesture-capture-tool"><strong><a href="https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/KinectReader">KinectReader: </a> Human Gesture Capture Tool</strong></h4>
+<p>A compiled Windows application that connects to a Kinect sensor device and provides a user interface for capturing and storing gestures performed by human subjects. It's primary output data is human stick-figure joint positions in a .csv format, but can also capture corresponding RGB video and audio at the same time.</p>
+<h4 id="kinectcaptureeditor-human-gesture-trimming-tool"><strong><a href="https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/KinectCaptureEditor">KinectCaptureEditor: </a> Human Gesture Trimming Tool</strong></h4>
+<p>A compiled Windows application that loads human joint position .csv files produced by the KinectReader or other tools, as well as optional corresponding video and audio files. It provides a timeline-based method to trim audio and video joint movement sequences into representative human gestures.</p>
+<h4 id="labaneditor-gesture-analysis-and-labanotation-generator"><strong><a href="https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/LabanEditor">LabanEditor: </a>  Gesture Analysis and Labanotation Generator</strong></h4>
+<p>A Python application that loads a Kinect joint .csv file representing a human gesture, provides algorithmic options for automatically extracting keyframes from the gesture that correspond Labanotation data, and provides a graphical user interface for selection and modification of the extracted keyframes. Additionally, it saves the resulting gesture data in a JSON file format suitable for controlling robots running a gesture interpretation driver, as well as .png graphic file renderings of the charts and diagrams used in the interface.</p>
+<h4 id="msrabotsimulation-gesture-performance-with-simulated-robot"><strong><a href="https://github.com/microsoft/LabanotationSuite/tree/master/MSRAbotSimulation">MSRAbotSimulation: </a>  Gesture Performance with Simulated Robot</strong></h4>
+<p>This Python and browser-based simulation software uses javascript and html code to implement an animated 3D model of the robot and a user interface for selecting and rendering gestures described in the JSON format. A temporary local HTTP server invoked with python or an existing server can be used to host the software and the simulation is run within a modern web browser. The user can choose from a collection of sample gestures, or select a new gesture captured and created using this project's Gesture Authoring Tools.</p>
+<h3 id="gesturebot-design-kit"><a href="https://github.com/microsoft/gestureBotDesignKit">gestureBot Design Kit</a></h3>
+<p>With a Windows 10 PC, and optionally a 3D-printer and about $350(USD) in electronic servos and parts, the gestureBot Design Kit repository contains all the information needed to build both a virtual and physical desktop companion robot. It includes browser-based simulation and control software based on the <a href="https://www.robotis.us/dynamixel-xl-320/">Robotis XL</a> series of servo motors. To construct a physical robot, it provides models for 3D-printable body-parts, a parts-list for electronic components, and step-by-step assembly instructions. No soldering is required, but some manual skill is needed to mate small electronic connectors, as well as manipulate small plastic rivets and miniature metal screws to assemble the body components.</p>
+<h4 id="gesture-library-example-set-of-upper-torso-gestures"><strong><a href="https://github.com/microsoft/gestureBotDesignKit/tree/main/src/Labanotation">Gesture Library: </a> Example Set of Upper-Torso Gestures</strong></h4>
+<p>The Gesture Library is a data-set of upper-torso gesture-concept pairs expressed in Labanotation format and stored as .json files. The data is directly accessed by the Gesture Engine. The library includes a complete listing of the sample database including a video clip of each gesture performed by the gestureBot.</p>
+<h4 id="gesture-service-example-gesture-service-engine"><strong><a href="https://github.com/microsoft/gestureBotDesignKit/tree/main/src/Samples/gestureService_w2v">Gesture Service:  </a> Example Gesture Service Engine</strong></h4>
+<p>The Gesture Service project is a software module constructed with Python and Google's neural network <a href="https://code.google.com/archive/p/word2vec/#!">word2vec</a> that takes a text phrase as input and returns a corresponding gesture.</p>
+<h2 id="navigation">Navigation</h2>
+<p>The field of robot navigation includes systems and methods such as simultaneous-location-and-mapping (SLAM), path planning, and map management.</p>
+<h4 id="hololensnavigation-self-calibrating-indoor-navigation"><strong><a href="https://github.com/microsoft/HololensNavigation">HololensNavigation:  </a>Self-calibrating Indoor Navigation</strong></h4>
+<p>This project shows how a <a href="https://www.microsoft.com/en-us/hololens">Hololens</a> device can be placed on the head of <a href="https://us.softbankrobotics.com/pepper">Pepper robot</a> and provide a self-calibrating indoor navigation solution within a single room.</p>
+<h2 id="manipulation">Manipulation</h2>
+<p>In industrial applications, robotic object manipulation is common where actions are manually programmed and repeated behind safety barriers. In service-robotics scenarios, dynamic environments and safety considerations make the entire field much more challenging. Our projects explore solutions where HRI and Navigation technologies can be leveraged to allow robots to learn from humans to perform manipulation tasks safely and effectively in residential, workplace, and public environments. </p>
+<p>While we are working towards an open-source object-manipulation sample for service-robotics next year, our team-mates at Microsoft Bonsai are forging ahead with Autonomous Systems for industrial applications.  Take a look at <a href="https://microsoft.github.io/moab/">Project Moab</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2021-05-26 05:43:10
+-->
