@@ -10,7 +10,7 @@ Current projects focus on the field of **Human-Robot-Interaction** with the goal
 ## Human-Robot Interaction (HRI)
 The field of HRI includes robot speech, expressions, gestures, and information access to provide natural user interface methods for robot applications.
 
-### [Labanotation Suite](https://microsoft.github.io/LabanotationSuite) [*repository*](https://github.com/microsoft/LabanotationSuite)
+### [Labanotation Suite](https://microsoft.github.io/LabanotationSuite) [***repository***](https://github.com/microsoft/LabanotationSuite)
 The Labanotation Suite is a collection of applications comprising a system that can be used to give service robots the ability to move in natural and meaningful ways. It includes software tools, source code, sample data, and hardware simulation software that supports experimentation with the concepts presented in the paper **[Describing Upper-Body Motions Based on Labanotation for Learning-from-Observation Robots](https://link.springer.com/article/10.1007%2Fs11263-018-1123-1) (International Journal of Computer Vision, December 2018)**. The system consists of compiled gesture capture applications using the Microsoft Kinect sensor device and a Windows 10 PC. Editing tools constructed in Python provide gesture trimming and movement analysis options to identify key points of movment. Output is graphical Labanotation scores as well as movement data expressed in Labanotation and stored in JSON data format. 
 
 #### **[KinectReader: ](https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/KinectReader) Human Gesture Capture Tool**
