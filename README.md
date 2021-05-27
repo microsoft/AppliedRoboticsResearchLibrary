@@ -62,5 +62,5 @@ navigation_launcher is a ROS (Melodic) package that contains launch scripts for 
 ## Manipulation
 In industrial applications, robotic object manipulation is common where actions are manually programmed and repeated behind safety barriers. In service-robotics scenarios, dynamic environments and safety considerations make the entire field much more challenging. Our projects explore solutions where HRI and Navigation technologies can be leveraged to allow robots to learn from humans to perform manipulation tasks safely and effectively in residential, workplace, and public environments. 
 
-While we are working towards an open-source object-manipulation sample for service-robotics next year, our team-mates at Microsoft Bonsai are forging ahead with Autonomous Systems for industrial applications.  Take a look at [***Project Moab***](https://microsoft.github.io/moab/).
+While we are working towards an open-source object-manipulation sample for service-robotics next year, our team-mates at [Microsoft Project Bonsai](https://www.microsoft.com/en-us/ai/autonomous-systems-project-bonsai) are forging ahead with autonomous systems for industrial applications.  Take a look at [***Project Moab***](https://microsoft.github.io/moab/).
 
