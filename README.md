@@ -10,7 +10,7 @@ Current projects focus on the field of **Human-Robot-Interaction** with the goal
 ## Human-Robot Interaction (HRI)
 The field of HRI includes robot speech, expressions, gestures, and information access to provide natural user interface methods for robot applications.
 
-### [Labanotation Suite](https://github.com/microsoft/LabanotationSuite)
+### [Labanotation Suite](https://microsoft.github.io/LabanotationSuite) [*repository*](https://github.com/microsoft/LabanotationSuite)
 The Labanotation Suite is a collection of applications comprising a system that can be used to give service robots the ability to move in natural and meaningful ways. It includes software tools, source code, sample data, and hardware simulation software that supports experimentation with the concepts presented in the paper **[Describing Upper-Body Motions Based on Labanotation for Learning-from-Observation Robots](https://link.springer.com/article/10.1007%2Fs11263-018-1123-1) (International Journal of Computer Vision, December 2018)**. The system consists of compiled gesture capture applications using the Microsoft Kinect sensor device and a Windows 10 PC. Editing tools constructed in Python provide gesture trimming and movement analysis options to identify key points of movment. Output is graphical Labanotation scores as well as movement data expressed in Labanotation and stored in JSON data format. 
 
 #### **[KinectReader: ](https://github.com/microsoft/LabanotationSuite/tree/master/GestureAuthoringTools/KinectReader) Human Gesture Capture Tool**
@@ -26,7 +26,7 @@ LabanEditor is a Python application that loads a Kinect joint CSV file represent
 #### **[MSRAbotSimulation: ](https://github.com/microsoft/LabanotationSuite/tree/master/MSRAbotSimulation)  Gesture Performance with Simulated Robot**
 This Python and browser-based simulation software uses javascript and html code to implement an animated 3D model of the robot and a user interface for selecting and rendering gestures described in the JSON format. A temporary local HTTP server invoked with python or an existing server can be used to host the software and the simulation is run within a modern web browser. The user can choose from a collection of sample gestures, or select a new gesture captured and created using this project's Gesture Authoring Tools.
 
-### [gestureBot Design Kit](https://github.com/microsoft/gestureBotDesignKit)
+### [gestureBot Design Kit](https://microsoft.github.io/gestureBotDesignKit/) [***repository***](https://github.com/microsoft/gestureBotDesignKit)
 
 With a Windows 10 PC, and optionally a 3D-printer and about $350(USD) in electronic servos and parts, the gestureBot Design Kit repository contains all the information needed to build both a virtual and physical desktop companion robot. It includes browser-based simulation and control software based on the [Robotis XL](https://www.robotis.us/dynamixel-xl-320/) series of servo motors. To construct a physical robot, it provides models for 3D-printable body-parts, a parts-list for electronic components, and step-by-step assembly instructions. No soldering is required, but some manual skill is needed to mate small electronic connectors, as well as manipulate small plastic rivets and miniature metal screws to assemble the body components.
 
@@ -41,7 +41,7 @@ The Gesture Service project is a software module constructed with Python and Goo
 ## Navigation
 The field of robot navigation includes systems and methods such as simultaneous-location-and-mapping (SLAM), path planning, and map management.
 
-### **[HoloLensNavigation](https://github.com/microsoft/HololensNavigation)**
+### [HoloLensNavigation](https://microsoft.github.io/HololensNavigation) [***repository***](https://github.com/microsoft/HololensNavigation)
 The HoloLensNavigation system shows how a [HoloLens](https://www.microsoft.com/en-us/hololens) device can be placed on the head of [Pepper robot](https://us.softbankrobotics.com/pepper) and provide a self-calibrating indoor navigation solution within a single room. It operates in one of three modes: map generation, position calibration, and navigation.
 
 #### **[HoloLensSpatialMapping: ](https://github.com/microsoft/HololensNavigation) Dynamic Spatial Mapping**
@@ -62,5 +62,5 @@ navigation_launcher is a ROS (Melodic) package that contains launch scripts for 
 ## Manipulation
 In industrial applications, robotic object manipulation is common where actions are manually programmed and repeated behind safety barriers. In service-robotics scenarios, dynamic environments and safety considerations make the entire field much more challenging. Our projects explore solutions where HRI and Navigation technologies can be leveraged to allow robots to learn from humans to perform manipulation tasks safely and effectively in residential, workplace, and public environments. 
 
-While we are working towards an open-source object-manipulation sample for service-robotics next year, our team-mates at Microsoft Bonsai are forging ahead with Autonomous Systems for industrial applications.  Take a look at [Project Moab](https://microsoft.github.io/moab/).
+While we are working towards an open-source object-manipulation sample for service-robotics next year, our team-mates at Microsoft Bonsai are forging ahead with Autonomous Systems for industrial applications.  Take a look at [***Project Moab***](https://microsoft.github.io/moab/).
 
