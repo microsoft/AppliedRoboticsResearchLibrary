@@ -70,15 +70,17 @@ There's a lot going on at Microsoft in robotics and other intelligent technologi
 ## https://developer.microsoft.com/en-us/windows/iot/
 **Windows 10 IoT** is a member of the Windows 10 product family that brings enterprise-class power, security, and manageability to the Internet of Things. Today, there are over 10,000 Windows IoT partners from the Edge to the Azure Cloud.
 
+## https://github.com/microsoft/AirSim
+From Microsoft AI & Research, open source simulator for autonomous vehicles built on Unreal / Unity physics-modeling engines.
+
 ## https://ms-iot.github.io/ROSOnWindows/
 [**Microsoft supports**](https://microsoft.github.io/Win-RoS-Landing-Page/) the [**Robot Operating System (ROS)**](https://www.ros.org) framework for collaborative, open source robotic software development.
 
 ## https://github.com/ms-iot
-The Microsot IoT public repositories on GitHub contains more than 200 projects related to Microsoft technologies, automation, intelligent environments, and robotics.
+The Microsot IoT public repositories on GitHub contain more than 200 projects related to Microsoft technologies, automation, intelligent environments, and robotics.
 
 ## https://github.com/Microsoft/AI-Robot-Challenge-Lab
 This laboratory guide walks a user through setting up voice-control of a simulated robotic arm using the [**Microsoft Azure Bot Service**](https://azure.microsoft.com/en-us/services/bot-services/).
-
 
 ## https://github.com/ms-iot/holobot
 
