@@ -41,7 +41,7 @@ The Gesture Service project is a software module constructed with Python and Goo
 # Navigation
 The field of robot navigation includes systems and methods such as simultaneous-location-and-mapping (SLAM), path planning, and map management.
 
-## [**HoloLensNavigation**](https://microsoft.github.io/HololensNavigation) [*repository*](https://github.com/microsoft/HololensNavigation)
+## [**HoloLensNavigationForRobots**](https://microsoft.github.io/HololensNavigationForRobots) [*repository*](https://github.com/microsoft/HololensNavigationForRobots)
 The HoloLensNavigation system shows how a [HoloLens](https://www.microsoft.com/en-us/hololens) device can be placed on the head of [Pepper robot](https://us.softbankrobotics.com/pepper) and provide a self-calibrating indoor navigation solution within a single room. The calibration process is described in the paper: [***Dynamic Calibration between a Mobile Robot and SLAM Device for Navigation***](https://www.cvl.iis.u-tokyo.ac.jp/data/uploads/papers/Ishikawa_SLAMDevice_ROMAN2019.pdf). The system operates in and provides examples of three modes of operation supporting navigation: map generation, position calibration, and movement to a goal position.
 
 ### **[HoloLensSpatialMapping: ](https://github.com/microsoft/HololensNavigation) Dynamic Spatial Mapping**
