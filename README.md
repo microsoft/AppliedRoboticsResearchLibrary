@@ -5,7 +5,7 @@
 
 This library is a collection of GitHub repositories containing software applications, data sets, and hardware reference designs to support research and education in the fields of service-robotics. Our team invites you to join us in research and engineering efforts that advance how robots can assist and augment the capabilities of human beings.
 
-Current projects focus on the field of **Human-Robot-Interaction** with the goal of providing service robots the means to effectively communicate with humans. In the future we plan to offer new repositories exploring the fields of robot **Navigation** and object **Manipulation**.
+Projects are currently available in the fields of **Human-Robot-Interaction** with the goal of providing service robots the means to effectively communicate with humans, and robot **Navigation** with the goal of helping robots find their way to a destination. In the near future we plan to offer new repositories exploring the field of physical object **Manipulation**.
 
 # Human-Robot Interaction (HRI)
 The field of HRI includes robot speech, expressions, gestures, and information access to provide natural user interface methods for robot applications.
