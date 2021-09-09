@@ -3,7 +3,7 @@
 ### Open Source Samples for Service Robotics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-This library is a collection of GitHub repositories containing software applications, data sets, and hardware reference designs to support research and education in the fields of service-robotics. Our team invites you to join us in research and engineering efforts that advance how robots can assist and augment the capabilities of human beings.
+This library is a collection of GitHub repositories containing software applications, data sets, and hardware reference designs to support research and education in the fields of **service-robotics**. The term **service-robotics** refers to the expectation that the robots can safely operate in dynamic environments and in close proximity with humans. This is in contrast to **industrial-robotics** which often refers to systems performing pre-programmed repetitive tasks inside a cordoned-off safety zone.   Our team invites you to join us in research and engineering efforts that advance how robots can assist and augment the capabilities of human beings.
 
 Projects are currently available in the fields of **Human-Robot-Interaction** with the goal of providing service robots the means to effectively communicate with humans, and robot **Navigation** with the goal of helping robots find their way to a destination. In the near future we plan to offer new repositories exploring the field of physical object **Manipulation**.
 
