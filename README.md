@@ -41,22 +41,22 @@ The Gesture Service project is a software module constructed with Python and Goo
 # Navigation
 The field of robot navigation includes systems and methods such as simultaneous-location-and-mapping (SLAM), path planning, and map management.
 
-## [**HoloLensNavigationForRobots**](https://microsoft.github.io/HololensNavigationForRobots) [*repository*](https://github.com/microsoft/HololensNavigationForRobots)
+## [**HoloLensNavigationForRobots**](https://microsoft.github.io/HoloLensNavigationForRobots) [*repository*](https://github.com/microsoft/HoloLensNavigationForRobots)
 The HoloLensNavigation system shows how a [HoloLens](https://www.microsoft.com/en-us/hololens) device can be placed on the head of [Pepper robot](https://us.softbankrobotics.com/pepper) and provide a self-calibrating indoor navigation solution within a single room. The calibration process is described in the paper: [***Dynamic Calibration between a Mobile Robot and SLAM Device for Navigation***](https://www.cvl.iis.u-tokyo.ac.jp/data/uploads/papers/Ishikawa_SLAMDevice_ROMAN2019.pdf). The system operates in and provides examples of three modes of operation supporting navigation: map generation, position calibration, and movement to a goal position.
 
-### **[HoloLensSpatialMapping: ](https://github.com/microsoft/HololensNavigation) Dynamic Spatial Mapping**
+### **[HoloLensSpatialMapping: ](https://github.com/microsoft/HololensNavigationForRobots/tree/main/windows) Dynamic Spatial Mapping**
 HololensSpatialMapping is a UWP application that uses the HoloLens device sensors to capture and maintain a spatial map of the immediate environment and also communicates with HoloROS Bridge.
 
-### **[HoloLens_Localization: ](https://github.com/microsoft/HololensNavigation/tree/main/linux/HoloLens_Localization) Local Position Calibration and Computation**
+### **[HoloLens_Localization: ](https://github.com/microsoft/HololensNavigationForRobots/tree/main/linux/HoloLens_Localization) Local Position Calibration and Computation**
 HoloLens_Localization is a ROS (Melodic) package that computes the local position of the robot based on sensor measurements as the robot moves through calibrated poses and navigates through the environment.
 
-### **[HoloROSBridge: ](https://github.com/microsoft/HololensNavigation/tree/main/linux/HoloROSBridge)ROS Communication with HoloLens Device**
+### **[HoloROSBridge: ](https://github.com/microsoft/HololensNavigationForRobots/tree/main/linux/HoloROSBridge)ROS Communication with HoloLens Device**
 HoloROSBridge is a ROS (Melodic) package that communicates with the HoloLensSpatialMapping application running on the HoloLens device.
 
-### **[holo_nav_dash: ](https://github.com/microsoft/HololensNavigation/tree/main/linux/holo_nav_dash) Operational Dashboard**
+### **[holo_nav_dash: ](https://github.com/microsoft/HololensNavigationForRobots/tree/main/linux/holo_nav_dash) Operational Dashboard**
 holo_nav_dash is a ROS (Melodic) package that provides a local http server and a browser-based operational interface for starting up and monitoring calibration and navigation operations.
 
-### **[navigation_launcher: ](https://github.com/microsoft/HololensNavigation/tree/main/linux/navigation_launcher) ROS Navigation Stack Launcher**
+### **[navigation_launcher: ](https://github.com/microsoft/HololensNavigationForRobots/tree/main/linux/navigation_launcher) ROS Navigation Stack Launcher**
 navigation_launcher is a ROS (Melodic) package that contains launch scripts for starting up components for the HoloLens stack, the HoloLens Navigation stack, and the ROS Navigation stack.
 
 # Manipulation
